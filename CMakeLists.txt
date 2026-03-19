@@ -4,6 +4,8 @@ find_package(MPI REQUIRED)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Parallelisme_MPI main.cpp)
+add_executable(Parallelisme_MPI main.cpp
+        exemples.cpp
+        exercice1.cpp)
 target_include_directories(Parallelisme_MPI PRIVATE ${MPI_INCLUDE_PATH})
 target_link_libraries(Parallelisme_MPI PRIVATE MPI::MPI_CXX)
