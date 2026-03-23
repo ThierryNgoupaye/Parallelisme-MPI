@@ -3,8 +3,7 @@
 // Exercice 1
 //
 
-#include "mpi.h"
-
+#include <mpi.h>
 
 
 // Programme d'envoi de N valeurs entre le processus 0 et le processus 1
@@ -76,4 +75,5 @@ int main (int argc, char* argv[]) {
         std::cout << "P3: Temps écoulé de la version 2: " << fin_algorithme_2_time-debut_algorithme_2_time <<" s" <<std::endl;
     }
     MPI_Finalize();
+    exit(0);
 }
