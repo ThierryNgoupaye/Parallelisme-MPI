@@ -10,6 +10,8 @@ add_executable(Parallelisme_MPI main.cpp
         exercice2.cpp
         exercice3.cpp
         exercice4.cpp
-        exercice7.cpp)
+        exercice7.cpp
+        exercice8.cpp
+        exercice9.cpp)
 target_include_directories(Parallelisme_MPI PRIVATE ${MPI_INCLUDE_PATH})
 target_link_libraries(Parallelisme_MPI PRIVATE MPI::MPI_CXX)
